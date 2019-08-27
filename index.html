@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body onclick="closeLists()">
+		 <!--onclick="closeLists()"-->
+		<!--<div class="logo"><img src="img/pl.jpg" /></div>-->
+		<div class="tfoot">
+				<a>河南万和科技有限公司</a>
+				<a>网址:www.wanhekeji.com</a>
+				<a>电话:0371-63833272</a>
+		</div>
+		<p class="top">河南普乐泰生物科技股份有限公司</p>
+		<div class="top-dd">
+			<div class="bot2">
+				<img src="img/打印机.png" />
+				<button>打印</button>
+			</div>
+			<div class="dd">
+				<img src="img/添加.png" />
+				<button>添加</button>
+			</div>
+			<div class="tj">
+				<img src="img/提交.png" />
+				<button>提交</button>
+			</div>
+			<div class="top-qk">
+				<img src="img/删除.png" />
+				<button>清空</button>
+			</div>
+		</div>
+		<div class="bx">
+			<input type="text"  id="menu"  placeholder="请输入产品编码或者产品名称" />
+			<button id="search">
+				搜索
+			</button>
+		</div>
+		<!--<div class="box"></div>-->
+		
+		<div class="select">
+		    <div class="clearfix">
+		        <span>请选择:</span>
+		        <input type="text" readonly onclick="showList()" id="Etype" placeholder="==请选择==">
+		        <img src="img/下-三角.png" onclick="showli()" />
+		    </div>
+		    <div class="boxtj" id="boxtj"></div>
+		</div>
+		<!--<div class="content" style="width: 100%;text-align: center;"></div>-->
+		<div class="zo">
+			<div class="boy">
+				<table class="zong">
+					<tr>
+						<td class="td1">产品名称:</td>
+						<td class="td2"><span><input class="a1" type="text" /></span>  产品编号:<span><input type="text" class="c1" /></span></td>
+						<td class="td4" rowspan="9">
+							<h3 style="margin-bottom: 10px;"><i>PROTIL 普乐泰</i></h3>
+							<p style="margin-bottom: 10px;">营养成分表</p>
+							<table class="kuang">
+								<tr style="border-bottom: 1px solid gray;">
+									<td>项目</td>
+									<td class="b1">每100克</td>
+									<td class="b2">NRV%</td>
+								</tr>
+								<tr>
+									<td>能源</td>
+									<td><input class="b3" type="text" /></td>
+									<td><input class="b4" type="text" /></td>
+								</tr>
+								<tr>
+									<td>蛋白质</td>
+									<td><input class="b5" type="text" /></td>
+									<td><input class="b6" type="text" /></td>
+								</tr>
+								<tr>
+									<td>脂肪</td>
+									<td><input class="b7" type="text" /></td>
+									<td><input class="b8" type="text" /></td>
+								</tr>
+								<tr>
+									<td>碳水化合物</td>
+									<td><input class="b9" type="text" /></td>
+									<td><input class="b10" type="text" /></td>
+								</tr>
+								<tr>
+									<td>钠</td>
+									<td><input class="b11" type="text" /></td>
+									<td><input class="b12" type="text" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td1">产品类型:</td>
+						<td class="td2"><input class="a2" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">配&nbsp;&nbsp;料:</td>
+						<td class="td2" style="padding-right: 40px;"><textarea class="a3 textar"></textarea></td>
+					</tr>
+					<tr>
+						<td class="td1">保&nbsp;质&nbsp;期:</td>
+						<td class="td2"><input class="a4" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">贮存条件:</td>
+						<td class="td2"><input class="a5" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1" style="font-size: 12px;">生产许可证号:</td>
+						<td class="td2"><input class="a6" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">生产标准号:</td>
+						<td class="td2"><input class="a7" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">产&nbsp;&nbsp;地:</td>
+						<td class="td2"><input class="a8" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">生产单位:</td>
+						<td class="td3"><input class="a9" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">地&nbsp;&nbsp;址:</td>
+						<td class="td3"><input class="a10" type="text" /></td>
+						<td rowspan="3" style="font-weight: 900;font-size: 30px;">净含量:<span><input class="a16" type="text" /></span></td>
+					</tr>
+					<tr>
+						<td class="td1">电&nbsp;&nbsp;话:</td>
+						<td class="td3"><input class="a11" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">经&nbsp;销&nbsp;商:</td>
+						<td class="td3"><input class="a12" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">经销商地址:</td>
+						<td class="td3" colspan="2"><textarea class="a13 arae"></textarea></td>
+					</tr>
+					<tr>
+						<td class="td1">产品规则:</td>
+						<td class="td3" colspan="2"><input class="a14" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1">使用方法:</td>
+						<td class="td3" colspan="2"><input class="a15" type="text" /></td>
+					</tr>
+					<tr>
+						<td class="td1"><span>生产日期:</span></td>
+						<td class="td3" colspan="2"><div class="xhx"><input id="nowDate" type="text" /></div><span style="margin-left: 10px;">生产批号:</span><div class="xhx"><input class="e1" type="text" /></div></td>
+					</tr>
+				</table>
+			</div>
+			<div class="xx">
+				<a class="bot1 bot">取消</a>
+			</div>
+		</div>
+		<div class="ddz">
+				<table class="dzong">
+					<tr>
+						<td class="">产品名称:</td>
+						<td class=""><span><input class="a1 dd1" type="text" value="浓缩鸡汤" /></span>  产品编号:<span><input type="text" class="c1 dd2" /></span></td>
+						<td class="td4" rowspan="9">
+							<h3 style="margin-bottom: 10px;"><i>PROTIL 普乐泰</i></h3>
+							<p style="margin-bottom: 10px;">营养成分表</p>
+							<table class="kuang">
+								<tr style="border-bottom: 1px solid gray;">
+									<td>项目</td>
+									<td class="b1">每100克</td>
+									<td class="b2">NRV%</td>
+								</tr>
+								<tr>
+									<td>能源</td>
+									<td><input class="b3 dd17" type="text" value="1012千焦" /></td>
+									<td><input class="b4 dd18" type="text" value="12%" /></td>
+								</tr>
+								<tr>
+									<td>蛋白质</td>
+									<td><input class="b5 dd19" type="text" value="14.0克" /></td>
+									<td><input class="b6 dd20" type="text" value="23%" /></td>
+								</tr>
+								<tr>
+									<td>脂肪</td>
+									<td><input class="b7 dd21" type="text" value="20.0克" /></td>
+									<td><input class="b8 dd22" type="text" value="33%" /></td>
+								</tr>
+								<tr>
+									<td>碳水化合物</td>
+									<td><input class="b9 dd23" type="text" value="2.0克" /></td>
+									<td><input class="b10 dd24" type="text" value="1%" /></td>
+								</tr>
+								<tr>
+									<td>钠</td>
+									<td><input class="b11 dd25" type="text" value="5876毫克" /></td>
+									<td><input class="b12 dd26" type="text" value="294%" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="td1">产品类型:</td>
+						<td class="td2"><input class="a2 dd3" type="text" value="半固态调味料" /></td>
+					</tr>
+					<tr>
+						<td class="td1">配&nbsp;&nbsp;料:</td>
+						<td class="td2" style="padding-right: 40px;"><textarea class="a3 textar dd4">鸡架骨、水、鸡油、食用盐、食品添加剂(谷氨酸钠、5-呈味核苷酸二钠、黄原胶、食用香精、琥珀酸二钠)、香辛料、白砂糖、淀粉</textarea></td>
+					</tr>
+					<tr>
+						<td class="td1">保&nbsp;质&nbsp;期:</td>
+						<td class="td2"><input class="a4 dd5" type="text" value="12个月" /></td>
+					</tr>
+					<tr>
+						<td class="td1">贮存条件:</td>
+						<td class="td2"><input class="a5 dd6" type="text" value="阴凉、通风、干燥处" /></td>
+					</tr>
+					<tr>
+						<td class="td1" style="font-size: 12px;">生产许可证号:</td>
+						<td class="td2"><input class="a6 dd7" type="text" value="SC10241062200012" /></td>
+					</tr>
+					<tr>
+						<td class="td1">生产标准号:</td>
+						<td class="td2"><input class="a7 dd8" type="text" value="Q/HPS 0001S" /></td>
+					</tr>
+					<tr>
+						<td class="td1">产&nbsp;&nbsp;地:</td>
+						<td class="td2"><input class="a8 dd9" type="text" value="河南省鹤壁市" /></td>
+					</tr>
+					<tr>
+						<td class="td1">生产单位:</td>
+						<td class="td3"><input class="a9 dd10" type="text" value="河南普乐泰生物科技股份有限公司" /></td>
+					</tr>
+					<tr>
+						<td class="td1">地&nbsp;&nbsp;址:</td>
+						<td class="td3"><input class="a10 dd11" type="text" value="淇县高村镇107国道东侧" /></td>
+						<td rowspan="3" style="font-weight: 900;font-size: 30px;">净含量:<span><input class="a16 dd27" type="text" value="20kg" /></span></td>
+					</tr>
+					<tr>
+						<td class="td1">电&nbsp;&nbsp;话:</td>
+						<td class="td3"><input class="a11 dd12" type="text" value="0392-7621777" /></td>
+					</tr>
+					<tr>
+						<td class="td1">经&nbsp;销&nbsp;商:</td>
+						<td class="td3"><input class="a12 dd13" type="text" value="河南普乐泰食品科技有限公司" /></td>
+					</tr>
+					<tr>
+						<td class="td1">经销商地址:</td>
+						<td class="td3" colspan="2"><textarea class="a13 arae dd14">河南普鹤壁市淇县高村镇107国道东侧与园区路交汇处</textarea></td>
+					</tr>
+					<tr>
+						<td class="td1">产品规则:</td>
+						<td class="td3" colspan="2"><input class="a14 dd15" type="text" value="20kg/桶" /></td>
+					</tr>
+					<tr>
+						<td class="td1">使用方法:</td>
+						<td class="td3" colspan="2"><input class="a15 dd16" type="text" value="按需要量添加使用" /></td>
+					</tr>
+					<tr>
+						<td class="td1"><span>生产日期:</span></td>
+						<td class="td3" colspan="2"><div class="xhx"></div><span style="margin-left: 10px;">生产批号:</span><div class="xhx"></div></td>
+					</tr>
+				</table>
+				<div class="xzxan">
+					<button class="gb">关闭</button>
+				</div>
+				
+			</div>
+	</body>
+</html>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
