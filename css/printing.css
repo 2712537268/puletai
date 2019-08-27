@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.da{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid gainsboro;
+}
+.zzz{
+	/*width: 560px;
+	height: auto;
+	margin: 0px auto;
+	font-size: 14px;
+	font-family: "宋体";*/
+	/*width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid gainsboro;*/
+}
+.boy{
+	border: 1px solid gray;
+	width: 560px;
+	height: 376px;
+	margin: 11px auto;
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
+	font-size: 14px;
+	font-family: "宋体";
+	/*margin: 10px;*/
+}
+/*376*/
+
+.zong{
+	width: 550px;
+	margin: 5px auto;
+	/*margin: 10px;*/
+}
+td{
+	word-break:break-all;
+}
+.td1{
+	width: 84px;
+	height: auto;
+	vertical-align: top;
+}
+.td2{
+	display: inline-block;
+	width: 185px;
+	height: auto;
+	/*padding-bottom: 10px;*/
+	vertical-align: top;
+}
+.td3{
+	width: 250px;
+	height: auto;
+	vertical-align: top;
+}
+.td4{
+	vertical-align: top;
+	text-align: center;
+}
+.kuang{
+	border: 1px solid gray;
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10,.b11,.b12,.bb{
+	padding-bottom: 7px;
+}
+.xhx{
+	width: 35%;
+	border-bottom: 1px solid gray;
+	display: inline-block;
+}
+.yincang{
+	display: none;
+}
